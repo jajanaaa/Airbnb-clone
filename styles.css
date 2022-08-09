@@ -142,16 +142,27 @@ form:hover {
   /* background-color: red; */
   display: flex;
   justify-content: space-between;
-  gap: 40px;
+  gap: 45px;
   height: 78px;
   overflow-y: hidden;
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
   -ms-overflow-style: none;
   scrollbar-width: none;
-  position: relative;
-  box-shadow: 0 0 5px 10px #555 inset;
+  padding: 0 40px;
+  /* box-shadow: 0 0 5px 10px #555 inset; */
+  margin-left: -25px;
 }
+
+/* .overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #ff385d;
+  box-shadow: 0 0 5px 10px #555 inset;
+} */
 
 .icons-container > span i {
   width: 20px;
@@ -177,6 +188,7 @@ form:hover {
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.5px;
+  color: #717171;
 }
 
 .icons-container::-webkit-scrollbar {
@@ -189,20 +201,46 @@ form:hover {
 
 .cover {
   /* position: relative; */
+  /* position: relative; */
   margin-top: 25px;
 }
 
 .left {
-  /* position: absolute;
-  top: 50%;
-  opacity: 0; */
+  position: relative;
+  left: -5px;
+  opacity: 0;
   width: 28px;
   height: 28px;
   background-color: white !important;
   border: 0.5px solid rgb(0 0 0 / 0.3) !important;
 }
 
+.left::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50px;
+  box-shadow: 0 0 5px 20px rgb(255 255 255);
+  border: 0.5px solid rgb(0 0 0 / 0.3) !important;
+}
+
+.right::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50px;
+  box-shadow: 0 0 5px 20px rgb(255 255 255);
+  border: 0.5px solid rgb(0 0 0 / 0.3) !important;
+}
+
 .right {
+  position: relative;
   width: 28px;
   height: 28px;
   background-color: white !important;
