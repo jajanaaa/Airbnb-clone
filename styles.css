@@ -1,0 +1,218 @@
+/*********** FONT ************/
+@font-face {
+  font-family: "Circular";
+  src: url(./Circular/CircularStd-Light.otf);
+}
+/*********** END FONT ************/
+
+/*********** GENERAL STYLES ************/
+:root {
+  --purple: #ff385c;
+  --almost-black: #222222;
+  --grey: #717171;
+  --light-grey: #dddddd;
+  --very-light-grey: #71717113;
+  --white: #fff;
+}
+
+body {
+  font-family: "Circular";
+}
+
+a {
+  text-decoration: none !important;
+  color: var(--almost-black) !important;
+}
+/*********** END GENERAL STYLES ************/
+
+/*********** NAVBAR ************/
+nav {
+  height: 80px;
+  border-bottom: 1px solid var(--light-grey);
+}
+
+form {
+  border: 1px solid var(--light-grey);
+  box-shadow: 0 1px 2px rgb(0 0 0 / 8%), 0 4px 12px rgb(0 0 0 / 5%);
+  transition: box-shadow 0.2s ease;
+  -webkit-transition: box-shadow 0.2s ease;
+}
+
+.navlinks {
+  color: var(--almost-black);
+  font-size: 0.9em;
+  cursor: pointer;
+}
+
+.link-1,
+.link-2 {
+  border-right: 1.5px solid var(--light-grey);
+  font-weight: 600;
+}
+
+.link-3,
+.link-5 {
+  color: var(--grey);
+  font-weight: 400;
+}
+
+.link-4 {
+  font-weight: 600;
+}
+
+.link-5 {
+  font-size: 0.8em;
+}
+
+.btn-search {
+  height: 32px;
+  width: 32px;
+  background-color: var(--purple);
+}
+
+.btn-search:focus {
+  outline: none;
+}
+
+.btn:focus {
+  outline: none !important;
+}
+
+.btn:focus {
+  box-shadow: none;
+}
+
+.fa-magnifying-glass {
+  color: var(--white);
+  font-size: 13px;
+}
+
+.host {
+  font-weight: 600;
+  font-size: 0.9em;
+}
+
+.profile {
+  border: 1px solid var(--light-grey);
+  gap: 10px;
+  transition: box-shadow 0.2s ease;
+  -webkit-transition: box-shadow 0.2s ease;
+}
+
+.fa-circle-user {
+  font-size: 30px;
+  color: var(--grey);
+}
+
+.circle {
+  height: 14px;
+  min-width: 14px;
+  border: 2px solid var(--white) !important;
+  background-color: var(--purple) !important;
+}
+
+.translate-middle {
+  transform: translate(150%, -100%) !important;
+}
+
+/*********** NAVBAR HOVER ************/
+form:hover {
+  box-shadow: rgb(0 0 0 / 8%) 0px 3px 6px, rgb(0 0 0 / 5%) 0px 3px 6px;
+}
+
+.profile:hover {
+  box-shadow: rgb(0 0 0 / 8%) 0px 3px 6px, rgb(0 0 0 / 5%) 0px 3px 6px;
+}
+
+.host:hover {
+  background-color: var(--very-light-grey);
+}
+
+.fa-globe:hover {
+  background-color: var(--very-light-grey);
+}
+/*********** END NAVBAR HOVER ************/
+/*********** END NAVBAR ************/
+
+/*********** ICONS BAR ************/
+.icons-container {
+  overflow-x: auto;
+  white-space: nowrap;
+  justify-content: space-between;
+  /* background-color: red; */
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  height: 78px;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  position: relative;
+  box-shadow: 0 0 5px 10px #555 inset;
+}
+
+.icons-container > span i {
+  width: 20px;
+  height: 20px;
+  /* border: 1px solid black; */
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  color: #717171;
+}
+
+.icons-container > span {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.icons-container > span > span {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.5px;
+}
+
+.icons-container::-webkit-scrollbar {
+  display: none; /* for Chrome, Safari, and Opera */
+}
+
+.fa-circle-chevron-right {
+  float: right;
+}
+
+.cover {
+  /* position: relative; */
+  margin-top: 25px;
+}
+
+.left {
+  /* position: absolute;
+  top: 50%;
+  opacity: 0; */
+  width: 28px;
+  height: 28px;
+  background-color: white !important;
+  border: 0.5px solid rgb(0 0 0 / 0.3) !important;
+}
+
+.right {
+  width: 28px;
+  height: 28px;
+  background-color: white !important;
+  border: 0.5px solid rgb(0 0 0 / 0.3) !important;
+  margin-right: 20px;
+}
+
+.filter {
+  border: 0.5px solid rgb(0 0 0 / 0.3) !important;
+  border-radius: 10px;
+  padding: 13px;
+}
+/*********** END ICONS BAR ************/
