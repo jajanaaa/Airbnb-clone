@@ -234,6 +234,79 @@ form:hover {
 }
 /*********** END ICONS BAR HOVER ************/
 /*********** END ICONS BAR ************/
+
+/*********** LISTINGS ************/
+/* .listing-container {
+  background-color: red;
+}
+ .card {
+  width: 30%;
+}
+.carousel-indicators > li {
+  width: 5px !important;
+  height: 5px !important;
+  border-radius: 50px;
+  margin-right: 2px;
+  margin-left: 3px;
+} */
+.card {
+  border: none;
+}
+.frame {
+  aspect-ratio: 1.1 / 1;
+  border-radius: 15px;
+  object-fit: cover;
+  vertical-align: bottom;
+  overflow: hidden;
+}
+
+.card-img-top {
+  transform: scale(2);
+}
+
+.card-title {
+  color: var(--almost-black);
+  font-weight: 600;
+  font-size: 1em;
+  line-height: 20px;
+}
+
+.fa-star {
+  font-size: 12px;
+}
+
+.card-text > span {
+  /* font-weight: 600; */
+  color: var(--grey);
+}
+
+.price {
+  font-weight: 600;
+}
+/* .img {
+  width: 468px !important;
+} */
+
+/* .hear-backround {
+  position: relative;
+}
+
+.hear-outline {
+  position: absolute;
+  top: 0;
+} */
+
+/* .heart-backround {
+  color: red;
+} */
+
+/* .kkk {
+  top: 0;
+  right: 0;
+}  */
+/*********** END LISTINGS ************/
+
+/*********** MEDIA QUERIES ************/
 @media (min-width: 375px) and (max-width: 767px) {
   .btn-search {
     margin-left: 15vw;
@@ -252,3 +325,4 @@ form:hover {
     box-shadow: 0 1px 2px rgb(0 0 0 / 8%), 0 4px 12px rgb(0 0 0 / 5%);
   }
 }
+/*********** END MEDIA QUERIES ************/
