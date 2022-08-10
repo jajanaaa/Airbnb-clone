@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png" />
-    <title>Homebnb Home</title>
+    <title>Homebnb</title>
     <!-- *********** BOOTSTRAP CSS ************************* -->
     <link
       rel="stylesheet"
@@ -24,7 +24,7 @@
   <body>
     <header class="sticky-top">
       <!-- *********** NAR BAR ************************* -->
-      <nav class="navbar navbar-expand-lg">
+      <nav class="navbar">
         <div class="container">
           <!-- *********** LOGO ************************* -->
           <a class="navbar-brand d-none d-md-flex" href="#">
@@ -40,7 +40,7 @@
           <!-- *********** END LOGO ************************* -->
           <!-- *********** SEARCH BAR ************************* -->
           <form
-            class="d-flex align-items-center rounded-pill span-2 p-2 mx-auto"
+            class="container-sm d-flex align-items-center rounded-pill span-2 p-2 mx-auto"
             role="search"
           >
             <span class="navlinks d-none d-sm-flex">
@@ -50,9 +50,7 @@
             </span>
             <span class="d-sm-none px-3">
               <span class="link-4 d-flex">Where to?</span>
-              <a href="#" class="link-5 d-flex"
-                >Anywhere ∙ Any week ∙ Add guests</a
-              >
+              <a href="#" class="link-5">Anywhere ∙ Any week ∙ Add guests</a>
             </span>
             <button
               class="btn btn-search d-flex align-items-center justify-content-center rounded-circle border-0"
@@ -94,10 +92,11 @@
           <i class="fa-solid fa-angle-left"></i>
         </button>
 
-        <div class="icons-container d-flex justify-content-space-between">
+        <div class="icons-container d-flex justify-content-space-between pl-4">
           <span
-            class="d-flex flex-column justify-content-center align-items-center mr-4 mr-md-5 ml-2 ml-md-4"
+            class="d-flex flex-column justify-content-center align-items-center mr-4 mr-md-5"
           >
+            <!-- ml-2 ml-md-4 -->
             <i
               class="d-flex flex-column justify-content-center align-items-center fa-solid fa-house-chimney mb-2"
             ></i>
@@ -252,10 +251,10 @@
     </header>
     <main>
       <div class="container">
-        <div class="row mx-1">
+        <div class="row mx-1 mt-4">
           <!--  mx-1 -->
           <!-- *********** LISTING 1 ************************* -->
-          <div class="col col-12 col-md-6 col-lg-4 col-xl-3">
+          <div class="col mb-4 col-12 col-md-6 col-lg-4 col-xl-3">
             <div class="card">
               <div class="frame">
                 <div
@@ -304,7 +303,7 @@
                   >
                     <span class="carousel-control-prev-icon" aria-hidden="true">
                       <button
-                        class="carousel-left border-0 d-flex justify-content-center align-items-center"
+                        class="carousel-left border-0 justify-content-center align-items-center d-none d-md-flex"
                       >
                         <i class="fa-solid fa-angle-left"></i>
                       </button>
@@ -319,7 +318,7 @@
                   >
                     <span class="carousel-control-next-icon" aria-hidden="true">
                       <button
-                        class="carousel-right border-0 d-flex justify-content-center align-items-center"
+                        class="carousel-right border-0 d-none d-md-flex justify-content-center align-items-center"
                       >
                         <i class="fa-solid fa-angle-right"></i></button
                     ></span>
@@ -337,7 +336,7 @@
                   </span>
                 </div>
               </div>
-              <div class="card-body px-0 py-3">
+              <div class="card-body px-0 py-2">
                 <div class="d-flex justify-content-between align-items-center">
                   <h5 class="card-title mb-0">Badachro, UK</h5>
                   <span class="d-flex align-items-center">
@@ -356,7 +355,7 @@
           </div>
           <!-- *********** END LISTING 1 ************************* -->
           <!-- *********** LISTING 2 ************************* -->
-          <div class="col col-12 col-md-6 col-lg-4 col-xl-3">
+          <div class="col mb-4 col-12 col-md-6 col-lg-4 col-xl-3">
             <div class="card">
               <div class="frame">
                 <div
@@ -405,7 +404,7 @@
                   >
                     <span class="carousel-control-prev-icon" aria-hidden="true">
                       <button
-                        class="carousel-left border-0 d-flex justify-content-center align-items-center"
+                        class="carousel-left border-0 d-none d-md-flex justify-content-center align-items-center"
                       >
                         <i class="fa-solid fa-angle-left"></i>
                       </button>
@@ -420,7 +419,7 @@
                   >
                     <span class="carousel-control-next-icon" aria-hidden="true">
                       <button
-                        class="carousel-right border-0 d-flex justify-content-center align-items-center"
+                        class="carousel-right border-0 d-none d-md-flex justify-content-center align-items-center"
                       >
                         <i class="fa-solid fa-angle-right"></i></button
                     ></span>
@@ -438,7 +437,7 @@
                   </span>
                 </div>
               </div>
-              <div class="card-body px-0 py-3">
+              <div class="card-body px-0 py-2">
                 <div class="d-flex justify-content-between align-items-center">
                   <h5 class="card-title mb-0">Harlingen, Netherlands</h5>
                   <span class="d-flex align-items-center">
@@ -457,7 +456,7 @@
           </div>
           <!-- *********** END LISTING 2 ************************* -->
           <!-- *********** LISTING 3 ************************* -->
-          <div class="col col-12 col-md-6 col-lg-4 col-xl-3">
+          <div class="col mb-4 col-12 col-md-6 col-lg-4 col-xl-3">
             <div class="card">
               <div class="frame">
                 <div
@@ -506,7 +505,7 @@
                   >
                     <span class="carousel-control-prev-icon" aria-hidden="true">
                       <button
-                        class="carousel-left border-0 d-flex justify-content-center align-items-center"
+                        class="carousel-left border-0 d-none d-md-flex justify-content-center align-items-center"
                       >
                         <i class="fa-solid fa-angle-left"></i>
                       </button>
@@ -521,7 +520,7 @@
                   >
                     <span class="carousel-control-next-icon" aria-hidden="true">
                       <button
-                        class="carousel-right border-0 d-flex justify-content-center align-items-center"
+                        class="carousel-right border-0 d-none d-md-flex justify-content-center align-items-center"
                       >
                         <i class="fa-solid fa-angle-right"></i></button
                     ></span>
@@ -539,7 +538,7 @@
                   </span>
                 </div>
               </div>
-              <div class="card-body px-0 py-3">
+              <div class="card-body px-0 py-2">
                 <div class="d-flex justify-content-between align-items-center">
                   <h5 class="card-title mb-0">Amsterdam, Netherlands</h5>
                   <span class="d-flex align-items-center">
@@ -558,7 +557,7 @@
           </div>
           <!-- *********** END LISTING 3 ************************* -->
           <!-- *********** LISTING 4 ************************* -->
-          <div class="col col-12 col-md-6 col-lg-4 col-xl-3">
+          <div class="col mb-4 col-12 col-md-6 col-lg-4 col-xl-3">
             <div class="card">
               <div class="frame">
                 <div
@@ -607,7 +606,7 @@
                   >
                     <span class="carousel-control-prev-icon" aria-hidden="true">
                       <button
-                        class="carousel-left border-0 d-flex justify-content-center align-items-center"
+                        class="carousel-left border-0 d-none d-md-flex justify-content-center align-items-center"
                       >
                         <i class="fa-solid fa-angle-left"></i>
                       </button>
@@ -622,7 +621,7 @@
                   >
                     <span class="carousel-control-next-icon" aria-hidden="true">
                       <button
-                        class="carousel-right border-0 d-flex justify-content-center align-items-center"
+                        class="carousel-right border-0 d-none d-md-flex justify-content-center align-items-center"
                       >
                         <i class="fa-solid fa-angle-right"></i></button
                     ></span>
@@ -654,7 +653,7 @@ Aug 29 – Sep 3
 5.0
 1 of 6 items showing -->
 
-              <div class="card-body px-0 py-3">
+              <div class="card-body px-0 py-2">
                 <div class="d-flex justify-content-between align-items-center">
                   <h5 class="card-title mb-0">Joncherey, France</h5>
                   <span class="d-flex align-items-center">
@@ -673,7 +672,7 @@ Aug 29 – Sep 3
           </div>
           <!-- *********** END LISTING 4 ************************* -->
           <!-- *********** LISTING 5 ************************* -->
-          <div class="col col-12 col-md-6 col-lg-4 col-xl-3">
+          <div class="col mb-4 col-12 col-md-6 col-lg-4 col-xl-3">
             <div class="card">
               <div class="frame">
                 <div
@@ -722,7 +721,7 @@ Aug 29 – Sep 3
                   >
                     <span class="carousel-control-prev-icon" aria-hidden="true">
                       <button
-                        class="carousel-left border-0 d-flex justify-content-center align-items-center"
+                        class="carousel-left border-0 d-none d-md-flex justify-content-center align-items-center"
                       >
                         <i class="fa-solid fa-angle-left"></i>
                       </button>
@@ -737,7 +736,7 @@ Aug 29 – Sep 3
                   >
                     <span class="carousel-control-next-icon" aria-hidden="true">
                       <button
-                        class="carousel-right border-0 d-flex justify-content-center align-items-center"
+                        class="carousel-right border-0 d-none d-md-flex justify-content-center align-items-center"
                       >
                         <i class="fa-solid fa-angle-right"></i></button
                     ></span>
@@ -755,7 +754,7 @@ Aug 29 – Sep 3
                   </span>
                 </div>
               </div>
-              <div class="card-body px-0 py-3">
+              <div class="card-body px-0 py-2">
                 <div class="d-flex justify-content-between align-items-center">
                   <h5 class="card-title mb-0">Guyonvelle, France</h5>
                   <span class="d-flex align-items-center">
@@ -774,7 +773,7 @@ Aug 29 – Sep 3
           </div>
           <!-- *********** END LISTING 5 ************************* -->
           <!-- *********** LISTING 6 ************************* -->
-          <div class="col col-12 col-md-6 col-lg-4 col-xl-3">
+          <div class="col mb-4 col-12 col-md-6 col-lg-4 col-xl-3">
             <div class="card">
               <div class="frame">
                 <div
@@ -823,7 +822,7 @@ Aug 29 – Sep 3
                   >
                     <span class="carousel-control-prev-icon" aria-hidden="true">
                       <button
-                        class="carousel-left border-0 d-flex justify-content-center align-items-center"
+                        class="carousel-left border-0 d-none d-md-flex justify-content-center align-items-center"
                       >
                         <i class="fa-solid fa-angle-left"></i>
                       </button>
@@ -838,7 +837,7 @@ Aug 29 – Sep 3
                   >
                     <span class="carousel-control-next-icon" aria-hidden="true">
                       <button
-                        class="carousel-right border-0 d-flex justify-content-center align-items-center"
+                        class="carousel-right border-0 d-none d-md-flex justify-content-center align-items-center"
                       >
                         <i class="fa-solid fa-angle-right"></i></button
                     ></span>
@@ -856,7 +855,7 @@ Aug 29 – Sep 3
                   </span>
                 </div>
               </div>
-              <div class="card-body px-0 py-3">
+              <div class="card-body px-0 py-2">
                 <div class="d-flex justify-content-between align-items-center">
                   <h5 class="card-title mb-0">Nußdorf/Debant, Austria</h5>
                   <span class="d-flex align-items-center">
@@ -875,7 +874,7 @@ Aug 29 – Sep 3
           </div>
           <!-- *********** END LISTING 6 ************************* -->
           <!-- *********** LISTING 7 ************************* -->
-          <div class="col col-12 col-md-6 col-lg-4 col-xl-3">
+          <div class="col mb-4 col-12 col-md-6 col-lg-4 col-xl-3">
             <div class="card">
               <div class="frame">
                 <div
@@ -924,7 +923,7 @@ Aug 29 – Sep 3
                   >
                     <span class="carousel-control-prev-icon" aria-hidden="true">
                       <button
-                        class="carousel-left border-0 d-flex justify-content-center align-items-center"
+                        class="carousel-left border-0 d-none d-md-flex justify-content-center align-items-center"
                       >
                         <i class="fa-solid fa-angle-left"></i>
                       </button>
@@ -939,7 +938,7 @@ Aug 29 – Sep 3
                   >
                     <span class="carousel-control-next-icon" aria-hidden="true">
                       <button
-                        class="carousel-right border-0 d-flex justify-content-center align-items-center"
+                        class="carousel-right border-0 d-none d-md-flex justify-content-center align-items-center"
                       >
                         <i class="fa-solid fa-angle-right"></i></button
                     ></span>
@@ -957,7 +956,7 @@ Aug 29 – Sep 3
                   </span>
                 </div>
               </div>
-              <div class="card-body px-0 py-3">
+              <div class="card-body px-0 py-2">
                 <div class="d-flex justify-content-between align-items-center">
                   <h5 class="card-title mb-0">Gildeskål, Norway</h5>
                   <span class="d-flex align-items-center">
@@ -976,7 +975,7 @@ Aug 29 – Sep 3
           </div>
           <!-- *********** END LISTING 7 ************************* -->
           <!-- *********** LISTING 8 ************************* -->
-          <div class="col col-12 col-md-6 col-lg-4 col-xl-3">
+          <div class="col mb-4 col-12 col-md-6 col-lg-4 col-xl-3">
             <div class="card">
               <div class="frame">
                 <div
@@ -1025,7 +1024,7 @@ Aug 29 – Sep 3
                   >
                     <span class="carousel-control-prev-icon" aria-hidden="true">
                       <button
-                        class="carousel-left border-0 d-flex justify-content-center align-items-center"
+                        class="carousel-left border-0 d-none d-md-flex justify-content-center align-items-center"
                       >
                         <i class="fa-solid fa-angle-left"></i>
                       </button>
@@ -1040,7 +1039,7 @@ Aug 29 – Sep 3
                   >
                     <span class="carousel-control-next-icon" aria-hidden="true">
                       <button
-                        class="carousel-right border-0 d-flex justify-content-center align-items-center"
+                        class="carousel-right border-0 d-none d-md-flex justify-content-center align-items-center"
                       >
                         <i class="fa-solid fa-angle-right"></i></button
                     ></span>
@@ -1058,7 +1057,7 @@ Aug 29 – Sep 3
                   </span>
                 </div>
               </div>
-              <div class="card-body px-0 py-3">
+              <div class="card-body px-0 py-2">
                 <div class="d-flex justify-content-between align-items-center">
                   <h5 class="card-title mb-0">Uusikaupunki, Finland</h5>
                   <span class="d-flex align-items-center">
@@ -1077,7 +1076,7 @@ Aug 29 – Sep 3
           </div>
           <!-- *********** END LISTING 8 ************************* -->
           <!-- *********** LISTING 9 ************************* -->
-          <div class="col col-12 col-md-6 col-lg-4 col-xl-3">
+          <div class="col mb-4 col-12 col-md-6 col-lg-4 col-xl-3">
             <div class="card">
               <div class="frame">
                 <div
@@ -1126,7 +1125,7 @@ Aug 29 – Sep 3
                   >
                     <span class="carousel-control-prev-icon" aria-hidden="true">
                       <button
-                        class="carousel-left border-0 d-flex justify-content-center align-items-center"
+                        class="carousel-left border-0 d-none d-md-flex justify-content-center align-items-center"
                       >
                         <i class="fa-solid fa-angle-left"></i>
                       </button>
@@ -1141,7 +1140,7 @@ Aug 29 – Sep 3
                   >
                     <span class="carousel-control-next-icon" aria-hidden="true">
                       <button
-                        class="carousel-right border-0 d-flex justify-content-center align-items-center"
+                        class="carousel-right border-0 d-none d-md-flex justify-content-center align-items-center"
                       >
                         <i class="fa-solid fa-angle-right"></i></button
                     ></span>
@@ -1159,7 +1158,7 @@ Aug 29 – Sep 3
                   </span>
                 </div>
               </div>
-              <div class="card-body px-0 py-3">
+              <div class="card-body px-0 py-2">
                 <div class="d-flex justify-content-between align-items-center">
                   <h5 class="card-title mb-0">Ntungamo, Uganda</h5>
                   <span class="d-flex align-items-center">
@@ -1178,7 +1177,7 @@ Aug 29 – Sep 3
           </div>
           <!-- *********** END LISTING 9 ************************* -->
           <!-- *********** LISTING 10 ************************* -->
-          <div class="col col-12 col-md-6 col-lg-4 col-xl-3">
+          <div class="col mb-4 col-12 col-md-6 col-lg-4 col-xl-3">
             <div class="card">
               <div class="frame">
                 <div
@@ -1227,7 +1226,7 @@ Aug 29 – Sep 3
                   >
                     <span class="carousel-control-prev-icon" aria-hidden="true">
                       <button
-                        class="carousel-left border-0 d-flex justify-content-center align-items-center"
+                        class="carousel-left border-0 d-none d-md-flex justify-content-center align-items-center"
                       >
                         <i class="fa-solid fa-angle-left"></i>
                       </button>
@@ -1242,7 +1241,7 @@ Aug 29 – Sep 3
                   >
                     <span class="carousel-control-next-icon" aria-hidden="true">
                       <button
-                        class="carousel-right border-0 d-flex justify-content-center align-items-center"
+                        class="carousel-right border-0 d-none d-md-flex justify-content-center align-items-center"
                       >
                         <i class="fa-solid fa-angle-right"></i></button
                     ></span>
@@ -1260,7 +1259,7 @@ Aug 29 – Sep 3
                   </span>
                 </div>
               </div>
-              <div class="card-body px-0 py-3">
+              <div class="card-body px-0 py-2">
                 <div class="d-flex justify-content-between align-items-center">
                   <h5 class="card-title mb-0">Drvenik Veli, Croatia</h5>
                   <span class="d-flex align-items-center">
@@ -1279,7 +1278,7 @@ Aug 29 – Sep 3
           </div>
           <!-- *********** END LISTING 10 ************************* -->
           <!-- *********** LISTING 11 ************************* -->
-          <div class="col col-12 col-md-6 col-lg-4 col-xl-3">
+          <div class="col mb-4 col-12 col-md-6 col-lg-4 col-xl-3">
             <div class="card">
               <div class="frame">
                 <div
@@ -1328,7 +1327,7 @@ Aug 29 – Sep 3
                   >
                     <span class="carousel-control-prev-icon" aria-hidden="true">
                       <button
-                        class="carousel-left border-0 d-flex justify-content-center align-items-center"
+                        class="carousel-left border-0 d-none d-md-flex justify-content-center align-items-center"
                       >
                         <i class="fa-solid fa-angle-left"></i>
                       </button>
@@ -1343,7 +1342,7 @@ Aug 29 – Sep 3
                   >
                     <span class="carousel-control-next-icon" aria-hidden="true">
                       <button
-                        class="carousel-right border-0 d-flex justify-content-center align-items-center"
+                        class="carousel-right border-0 d-none d-md-flex justify-content-center align-items-center"
                       >
                         <i class="fa-solid fa-angle-right"></i></button
                     ></span>
@@ -1361,7 +1360,7 @@ Aug 29 – Sep 3
                   </span>
                 </div>
               </div>
-              <div class="card-body px-0 py-3">
+              <div class="card-body px-0 py-2">
                 <div class="d-flex justify-content-between align-items-center">
                   <h5 class="card-title mb-0">Stonington, Maine, US</h5>
                   <span class="d-flex align-items-center">
@@ -1382,7 +1381,7 @@ Aug 29 – Sep 3
           </div>
           <!-- *********** END LISTING 11 ************************* -->
           <!-- *********** LISTING 12 ************************* -->
-          <div class="col col-12 col-md-6 col-lg-4 col-xl-3">
+          <div class="col mb-4 col-12 col-md-6 col-lg-4 col-xl-3">
             <div class="card">
               <div class="frame">
                 <div
@@ -1431,7 +1430,7 @@ Aug 29 – Sep 3
                   >
                     <span class="carousel-control-prev-icon" aria-hidden="true">
                       <button
-                        class="carousel-left border-0 d-flex justify-content-center align-items-center"
+                        class="carousel-left border-0 d-none d-md-flex justify-content-center align-items-center"
                       >
                         <i class="fa-solid fa-angle-left"></i>
                       </button>
@@ -1446,7 +1445,7 @@ Aug 29 – Sep 3
                   >
                     <span class="carousel-control-next-icon" aria-hidden="true">
                       <button
-                        class="carousel-right border-0 d-flex justify-content-center align-items-center"
+                        class="carousel-right border-0 d-none d-md-flex justify-content-center align-items-center"
                       >
                         <i class="fa-solid fa-angle-right"></i></button
                     ></span>
@@ -1464,7 +1463,7 @@ Aug 29 – Sep 3
                   </span>
                 </div>
               </div>
-              <div class="card-body px-0 py-3">
+              <div class="card-body px-0 py-2">
                 <div class="d-flex justify-content-between align-items-center">
                   <h5 class="card-title mb-0">Supetar, Croatia</h5>
                   <span class="d-flex align-items-center">
@@ -1486,22 +1485,22 @@ Aug 29 – Sep 3
       </div>
     </main>
     <!-- *********** FOOTER ************************* -->
-    <footer
-      class="footer fixed-bottom bg-white py-3 border-top d-none d-lg-flex"
-    >
-      <div class="container d-flex justify-content-between">
-        <span class="footer-left">
-          <span>Made with ♥ by Jana </span>
-          <span class="mx-1">·</span>
-          <span>Privacy</span>
-          <span class="mx-1">·</span>
-          <span>Terms</span>
-          <span class="mx-1">·</span>
-          <span>Sitemap</span>
-          <span class="mx-1">·</span>
-          <span>Destinations</span>
+    <footer class="footer fixed-bottom bg-white py-3 border-top mt-4">
+      <div
+        class="container d-flex justify-content-center justify-content-lg-between"
+      >
+        <span class="footer-left d-flex">
+          <span class="">Made with ♥ by Jana </span>
+          <span class="mx-1 d-none d-lg-flex">·</span>
+          <span class="d-none d-lg-flex">Privacy</span>
+          <span class="mx-1 d-none d-lg-flex">·</span>
+          <span class="d-none d-lg-flex">Terms</span>
+          <span class="mx-1 d-none d-lg-flex">·</span>
+          <span class="d-none d-lg-flex">Sitemap</span>
+          <span class="mx-1 d-none d-lg-flex">·</span>
+          <span class="d-none d-lg-flex">Destinations</span>
         </span>
-        <span class="footer-right">
+        <span class="footer-right d-none d-lg-flex">
           <span>
             <i class="fa-solid fa-globe mr-2"></i
             ><span>English (US)</span></span
@@ -1513,7 +1512,7 @@ Aug 29 – Sep 3
           ></span>
         </span>
       </div>
-      <span class="position-fixed map rounded-pill">
+      <span class="position-fixed map rounded-pill d-none d-lg-flex">
         <span>Show map</span>
         <span><i class="fas fa-map ml-1"></i></span>
       </span>

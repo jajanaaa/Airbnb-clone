@@ -61,6 +61,15 @@ form {
   color: var(--grey) !important;
   font-weight: 400;
 }
+.link-5 {
+  color: var(--grey) !important;
+  font-weight: 400;
+  display: block;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 55vw;
+}
 
 .link-4 {
   font-weight: 600;
@@ -386,9 +395,10 @@ form:hover {
 /*********** END LISTINGS ************/
 
 /*********** MEDIA QUERIES ************/
-@media (min-width: 375px) and (max-width: 767px) {
-  .btn-search {
-    margin-left: 15vw;
+@media (max-width: 767px) {
+  form {
+    width: 100%;
+    justify-content: space-between;
   }
 }
 
@@ -405,3 +415,6 @@ form:hover {
   }
 }
 /*********** END MEDIA QUERIES ************/
+.row {
+  margin-bottom: 65px;
+}
