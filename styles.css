@@ -413,8 +413,60 @@ form:hover {
     border-bottom: 1px solid var(--light-grey);
     box-shadow: 0 1px 2px rgb(0 0 0 / 8%), 0 4px 12px rgb(0 0 0 / 5%);
   }
+
+  header {
+    position: sticky;
+  }
 }
 /*********** END MEDIA QUERIES ************/
 .row {
   margin-bottom: 65px;
+}
+
+/* @media (min-width: 767px) {
+  .row {
+    margin-right: -15px !important;
+    margin-left: -15px !important;
+  }
+} */
+
+.carousel .carousel-control-next-icon {
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+.carousel:hover .carousel-control-next-icon {
+  opacity: 1;
+}
+
+.carousel .carousel-control-prev-icon {
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+.carousel:hover .carousel-control-prev-icon {
+  opacity: 1;
+}
+
+@media (min-width: 767px) {
+  header.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: var(--white);
+    z-index: 999;
+    border: 1px solid var(--light-grey);
+    box-shadow: 0 1px 2px rgb(0 0 0 / 8%), 0 4px 12px rgb(0 0 0 / 5%);
+    transition: box-shadow 0.2s ease;
+    -webkit-transition: box-shadow 0.2s ease;
+    transition: all 0.4s ease;
+  }
+
+  header.sticky .general-icons-container {
+    padding-top: 5px !important;
+    transition: all 0.2s ease;
+  }
+
+  header.sticky .icons-container {
+    height: 70px;
+    transition: all 0.4s ease;
+  }
 }
