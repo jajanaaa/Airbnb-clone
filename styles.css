@@ -322,19 +322,22 @@ form:hover {
 .carousel-right {
   /* width: 28px;
   height: 28px; */
-  aspect-ratio: 1 / 1;
+  /* aspect-ratio: 1 / 1; */
   width: 24px;
+  height: 24px;
   border-radius: 50px;
+  outline: none !important;
+  box-shadow: none;
 }
 
 .fa-angle-left,
 .fa-angle-right {
-  font-size: 14px;
+  /* font-size: 14px; */
 }
 
 .carousel-control-prev-icon {
   background-image: none;
-  margin-top: 5px;
+  /* margin-top: 5px; */
 }
 
 .carousel-control-next-icon {
