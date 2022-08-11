@@ -1,3 +1,10 @@
+// STICKY NAV
+const header = document.querySelector("header");
+
+window.addEventListener("scroll", function () {
+  header.classList.toggle("sticky", window.scrollY > 0);
+});
+
 // ICONS BAR SCROLL
 const leftButton = document.querySelector(".left");
 const rightButton = document.querySelector(".right");
@@ -9,26 +16,4 @@ leftButton.addEventListener("click", function () {
 
 rightButton.addEventListener("click", function () {
   container.scrollBy(200, 0);
-});
-
-// STICKY NAV
-// const header = document.querySelector("header");
-// // const headerHeight = header.getBoundingClientRect().height;
-
-// const stickyNav = function (entries) {
-//   const [entry] = entries;
-//   if (!entry.isIntersecting) header.classList.add("sticky");
-//   else header.classList.remove("sticky");
-// };
-
-// const headerObserver = new IntersectionObserver(stickyNav, {
-//   root: null,
-//   treshhold: 0,
-//   // rootMargin: `-${navheight}px`,
-// });
-
-// headerObserver.observe(header);
-window.addEventListener("scroll", function () {
-  const header = document.querySelector("header");
-  header.classList.toggle("sticky", window.scrollY > 0);
 });
