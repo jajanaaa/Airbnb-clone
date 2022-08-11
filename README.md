@@ -8,6 +8,7 @@
 
 ### Overview
 
+This is a clone Airbnb project for my portfolio. The focus of this project was to practice responsive web design with Bootstrap. I recreated the main Airbnb page using Boostrap elements and spacing as well as my own CSS and Javascript files.
 
 ### Screenshot
 
@@ -28,7 +29,8 @@
 
 ### What I learned
 
+I learned how to use Bootstrap navbar, containers, rows, columns, cards, carousels, spacing, etc. 
 
 ### Continued development
 
-
+I want to learn more about JavaScript scroll events.
