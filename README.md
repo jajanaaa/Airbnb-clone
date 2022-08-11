@@ -11,7 +11,7 @@
 
 ### Screenshot
 
-![](./images/screenshot.jpg)
+![](./Airbnb-clone/images/screenshot.jpg)
 
 ### Links
 
